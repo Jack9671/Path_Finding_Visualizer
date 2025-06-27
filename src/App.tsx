@@ -1286,7 +1286,7 @@ const generateFullGridMap = async () => {
               checked={enableHighwayTypeFilter}
               onChange={(e) => setEnableHighwayTypeFilter(e.target.checked)}
             />{' '}
-            Enable Highway Type Filtering
+            Enable Highway Type Filtering 
           </label>
           {enableHighwayTypeFilter && (
             <>
@@ -1398,7 +1398,7 @@ const generateFullGridMap = async () => {
             marginBottom: '12px',
           }}
         >
-          {enableLowerDetail ? 'Disable Lower Detail Levels' : 'Enable Lower Detail Levels'}
+          {enableLowerDetail ? 'Unhide less important highway based on zoom level' : 'Hide less important highway based on zoom level (for smoother map rendering)'}
         </button> 
  
         {/* ←──runSearch Button ──→ */}
