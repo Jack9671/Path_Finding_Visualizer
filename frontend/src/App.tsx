@@ -1501,7 +1501,7 @@ const generateFullGridMap = async () => {
       fontSize: '12px'
     }}
   >
-    Random Pick {randomCount}
+    Random Pick {randomCount} end nodes
   </button>
 </div>
   {(
