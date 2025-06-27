@@ -1047,7 +1047,7 @@ const generateFullGridMap = async () => {
  // USED TO ALERT USERS NOT TO USE BRUTE FORCE WHEN NUMBER OF END NODES > 9
   useEffect(() => {
     if (endNodes.length > 9) {
-      alert('Warning: Brute Force will take a large amount of time to run when the number of end nodes exceeds 9.I higtly recommend users to use the Nearest Neighbor algorithm instead.');
+      alert('Warning: Brute Force will take a large amount of time to run when the number of end nodes exceeds 9. I highly recommend users to use the Nearest Neighbor algorithm instead.');
     }
   }, [endNodes.length]);
   return (
@@ -1149,9 +1149,9 @@ const generateFullGridMap = async () => {
           >
             Run Test
           </button>
-          <div style={{ fontSize: '11px', color: '#666', marginTop: '4px' }}>
-            Run performance test for numerical comparison of algorithms on DongXoaiCity.osm file 15 times with different random start and end nodes each time. Open console to see results.
-            I expect users to put the DongXoaiCity.osm file in the public folder beforing running the test. Here is the link to download the content of the file: <a href="https://overpass-turbo.eu/s/26Oc" target="_blank" rel="noopener noreferrer">DongXoaiCity.osm</a>
+          <div style={{ fontSize: '11px', color: '#666', marginTop: '4px' }}>            
+            Run numerical performance test for algorithms on a pre-loaded hardcode <a href="https://overpass-turbo.eu/s/26Oc" target="_blank" rel="noopener noreferrer">Dong Xoai city map</a> 15 times with different random start and end nodes each time. Open console to see results.
+            Users do not need to care about this button as it is not related to the flow and purpose of the web
           </div>
         </fieldset>
         {/* ←── Enable Bidirectional Search ──→ */}
