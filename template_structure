@@ -1,0 +1,20 @@
+react-fastapi-comm-template/
+│
+├── frontend/                         # React app using Vite + TypeScript
+│   ├── package.json                  # Project metadata and dependencies (React, TypeScript, Vite)
+│   ├── tsconfig.json                 # TypeScript compiler options for the project
+│   ├── vite.config.ts                # Vite config with proxy to FastAPI backend (port 8000)
+│   ├── index.html                    # HTML template that loads the React app
+│   ├── setup.bat                    # script to install local node_modules
+│   ├── README.md                     # Instructions for setting up and running the frontend
+│   └── src/                          # Source code
+│       ├── App.tsx                   # Main React component; fetches from FastAPI and displays response
+│       └── main.tsx                  # Entry point that renders <App /> into #root
+│
+├── backend/                          # FastAPI backend
+│   ├── main.py                       # FastAPI server with one route and CORS enabled for frontend
+│   ├── requirements.txt              # Python dependencies (FastAPI, Uvicorn)
+│   ├── setup.bat                      #  script to create virtualenv and install dependencies
+│   └── README.md                     # Instructions for setting up and running the backend
+
+

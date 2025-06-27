@@ -1,0 +1,29 @@
+# 🚀 How to Run This Project (React + FastAPI)
+
+Follow these steps in your terminal to start both the frontend (React) and backend (FastAPI) apps.
+
+## 1. Setup the Backend (FastAPI)
+---------------------------------
+### On Windows (Command Prompt):
+cd backend
+setup.bat           # This will create a virtual environment and install dependencies
+call .venv\Scripts\activate
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+## 2. Setup the Frontend (React + TypeScript)
+---------------------------------------------
+Open a new terminal window.
+
+### On Windows (Command Prompt):
+cd frontend
+setup.bat
+npm run dev
+
+## 3. Test the Connection
+--------------------------
+Open your browser and visit: http://localhost:3000
+
+You should see a message from FastAPI loaded via React.
+
+------------------------------
+✅ Done! You’re now running a full-stack TypeScript + FastAPI app!
