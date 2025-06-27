@@ -1087,7 +1087,7 @@ const generateFullGridMap = async () => {
             }}
           />
           <div style={{ fontSize: '11px', color: '#666', marginTop: '4px' }}>
-            - Firstly, users select a portion of map at <a href="https://overpass-turbo.eu/" target="_blank" rel="noopener noreferrer">overpass-turbo</a> <br/>
+            - Firstly, users select a portion of map at <a href="https://overpass-turbo.eu/s/26Oo" target="_blank" rel="noopener noreferrer">overpass-turbo</a> <br/>
             - Secondly, users export it as .osm file.<br/>
             - Finally, users upload the .osm file here to visualize pathfinding algorithms.
           </div>
