@@ -988,7 +988,7 @@ const linkColor = useCallback((link: any) => {
   // USED TO GENERATE A MAZE USING PRIM'S ALGORITHM
 const generateMaze = async () => {
   try {
-    const xmlString = generatePrimMazeOSM( randInt(10, 50),
+    const xmlString = generatePrimMazeOSM( randInt(10, 200),
        0.0001, randInt(1, 9999));
     setOsmContent(xmlString);
     const parsedData = await parseOSMData(xmlString);
@@ -1009,7 +1009,7 @@ const generateMaze = async () => {
 // USED TO GENERATE A FULL GRID wITHOUT MISSING LINKS
 const generateFullGridMap = async () => {
   try {
-    const xmlString = generateFullGrid(randInt(10, 50), 0.0001);
+    const xmlString = generateFullGrid(randInt(10, 200), 0.0001);
     setOsmContent(xmlString);
     const parsedData = await parseOSMData(xmlString);
     setFullGraphData(parsedData);
