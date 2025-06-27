@@ -1717,7 +1717,7 @@ const generateFullGridMap = async () => {
   <div><span style={{ color: 'gray' }}>●</span> Unvisited</div>
   <div><span style={{ color: 'white' }}>●</span> Visited</div>
   <div><span style={{ color: 'yellow' }}>●</span> Solution Path</div>
-  <div><span style={{ color: 'orange' }}>●</span> Solution Path Segment</div>
+  <div><span style={{ color: 'orange' }}>●</span> Solution Path</div>
   <div><span style={{ color: 'white', backgroundColor: 'black', padding: '2px', borderRadius: '50%' }}>S</span> Start Node</div>
   <div><span style={{ color: 'white', backgroundColor: 'red', padding: '2px', borderRadius: '50%' }}>1,2,3...</span> End Nodes (Order in which you select)</div>
   <div>Other colors are for differentiating highway type</div>
