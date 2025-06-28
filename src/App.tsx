@@ -1227,14 +1227,16 @@ const generateFullGridMap = async () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <input
                 type="number"
-                min="0.01"
+                min="0.1"
                 max="20"
-                step="0.01"
                 value={MinkowskiDistanceParameter}
-                onChange={(e) => {
-                  const value = parseFloat(e.target.value);
-                  setMinkowskiDistanceParameter(isNaN(value) ? 0.01 : value);
-                }}   
+                onChange={(e) => {if (parseFloat(e.target.value) < 0.1){
+                  setMinkowskiDistanceParameter(0.1);
+                } else if (parseFloat(e.target.value) > 20){
+                  setMinkowskiDistanceParameter(20);
+                } else {
+                  setMinkowskiDistanceParameter(parseFloat(e.target.value) || 0.1);
+                }}}
                 style={{ 
                   flex: 1, 
                   padding: '4px', 
@@ -1246,8 +1248,9 @@ const generateFullGridMap = async () => {
             </div>
             <div style={{ fontSize: '11px', color: '#666', marginTop: '4px' }}>
               - Minkowski distance parameter (1 for Manhattan, 2 for Euclidean, etc.) <br />
-              - Used to tune the heuristics for A*, Greedy Best-First, and Dijkstra's algorithms<br />
-              - A lower value makes the heurisitc more significant to the total cost function, while a higher value makes it less significant. 
+              - Used to tune the heuristics for A* and Greedy Best-First.<br />
+              - A lower value makes the heurisitc more significant to the total cost function, while a higher value makes it less significant.<br />
+              - Min is set to 0.1, max is set to 20 for numerical stability.
             </div>
           </fieldset>
         )}
