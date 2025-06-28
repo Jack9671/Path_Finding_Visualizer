@@ -494,7 +494,7 @@ const updateUIInfor = (
 
     // Update global totals
     const empiricalFactor = 11900 / 152; // Empirical factor to adjust distance to match result in google maps
-    setTotalVisitedNodeCount(prev => prev + visitedNodes.size);
+    setTotalVisitedNodeCount(visitedNodes.size);
     setTotalDistance(prev => prev + pathDistance * empiricalFactor);
 
     // Compute this segment’s distance
