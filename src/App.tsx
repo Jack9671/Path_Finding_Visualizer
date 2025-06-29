@@ -1128,7 +1128,7 @@ const generateFullGridMap = async () => {
     </button>
   </div>
   <div style={{ fontSize: '11px', color: '#666' }}>
-    Generate a random maze or a random full grid for pathfinding algorithms on unweighted graph.
+    Generate a random maze or a random full grid for pathfinding algorithms.
   </div>
 </fieldset>
               {/* ←── Run Test For numerical comparision ──→ */}
